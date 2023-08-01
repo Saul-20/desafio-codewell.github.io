@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="desktop.css" media="(min-width: 900px)">
+    <title>Portafolio Web</title>
+</head>
+<body>
+    <header>
+        <div class="nav-header">
+            <h1><a href="index.html" class="logo">Saul Rodríguez</a></h1>
+                <nav class="nav">
+                    <a href="#">Articulos</a>
+                    <a href="#">Mensajes</a>
+                    <a href="#">Premios</a>
+                    <a href="#">Acerca de</a>
+                </nav>
+            <a href="#"><section class="botao">Ponerse en contacto</section></a>
+            <img src="Assets/Hamburger Menu.svg" alt="menu" class="burguer" onclick="abrir()">
+            <section id="lugar">
+                <menu id="itens">
+                    <img src="Assets/Hamburger Menu.svg" alt="menu" class="burguer2" onclick="fechar()">
+                    <ul>
+                        <li><a href="#">Articulos</a></li>
+                        <li><a href="#">Mensajes</a></li>
+                        <li><a href="#">Premios</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                    </ul>
+                </menu>
+            </section>
+        </div>
+        <div class="container-hero">
+            <h2 class="title-hero">Ayudar a las empresas a crear un software mejor y escalable</h2>
+            <p class="description-hero">Autor y desarrollador web galardonado, con mas de 15 años de experiencia laboral en empresas Fortune 500 como Apple, Google, Facebook y mas</p>
+        </div>
+    </header>
+    <main>
+        <section class="section-logos">
+            <figure class="container-logos">
+                <img src="assets/logos/walmart.svg" alt="walmart">
+                <img src="Assets/logos/jp morgan.svg" alt="jp morgan">
+                <img src="Assets/Logos/Visa.svg" alt="visa">
+                <img src="Assets/Logos/Tinder.svg" alt="tinder">
+                <img src="assets/logos/Samsung.svg" alt="samsung">
+                <img src="assets/logos/verizon.svg" alt="verizon">
+            </figure>
+        </section>
+        <section class="container-articles">
+            <div class="section-spense">
+                <img src="assets/spense.png" alt="spense">
+                <h2>Spense.com ➡</h2>
+                <p>Repensando la forma en que se les paga a los escritores, una plataforma de código abierto diseñada para ayudar a los escritores a concentrarse más en escribir y menos en cúando y cómo se les pagará. Proyecto en colaboracion con Codewell.cc</p>
+            </div>
+            <div class="section-yelp">
+                <img src="assets/YelpCamp.png" alt="spense">
+                <h2> YelpCamp.com ➡</h2>
+                <p>Permitiendo a los viajeros mochileros planificar perfectamente su viaje a través de una plataforma de código abierto similar a TripAdvisor. Con más de 1 millón de MAU, YelpCamp ha sido el favorito de la multitud en 2021.</p>
+            </div>
+        </section>
+        <section class="section-about">
+            <div>
+                <h3>Co-fundador de una de las comunidades más grandes del mundo.</h3>
+                <p>La experiencia combinada que tengo trabajando en las principales empresas de Fortune 500 me ha permitido desarrollar un conjunto de habilidades que me ayuda no solo en el desarrollo, sino en todos los aspectos de cualquier negocio.</p> <br>
+                <p>Me enorgullece anunciar que ahora estoy trabajando en una de las comunidades más grandes del mundo enseñando a las mentes jóvenes cómo venderse como desarrollador y abrirlos a un mundo completamente nuevo de oportunidades.</p> <br>
+            </div>
+            <div>
+                <p>Como desarrollador, tienes todo a tu disposicion y lo unico que te frena eres tú mismo.</p> <br>
+                <p>Una cita por la que vivo ilustra perfectamente lo que quiero decir.</p> <br>
+                <p>"¿Qué tan grande soñarías, si supieras que no fallarás?" Ya pasó por la parte más dificil de ser un desarrollador, es hora de elevar sus habilidades y convertirse en un lider en algo que le apasione.</p> <br>
+                <p>Estoy feliz de conversar mientras tomamos un café sobre cómo puedo ayudar a su empresa.</p>
+            </div>           
+        </section>
+        <section class="contact">
+            <div>
+                <h3>¿Interesado en trabajar conmigo?</h3>
+                <p>Estoy activo en tosas las plataformas de redes sociales que se enumeran a continuacion, pero tambien puede enviarme un correo eléctronico y le responderé dentro de las 24 y 48 horas.
+                </p>
+                <a href="#">¡Ponerse en contacto!</a>
+            </div>
+        </section>
+        <footer>
+            <h2>Saul Rodríguez</h2>
+            <ul>
+                <li><img src="Assets/Social Icons/Twitter.svg"></li>
+                <li><img src="Assets/Social Icons/LinkedIn.svg"></li>
+                <li><img src="Assets/Social Icons/Github.svg"></li>
+            </ul>
+        </footer>
+    </main>
+
+    <script>
+        function abrir() {
+            if (lugar.style.display == 'block') {
+                lugar.style.display = 'none'
+                menu.style.display = 'none'
+            } else {
+                lugar.style.display = 'block'
+                menu.style.display = 'none'
+            }
+        }
+        function fechar() {
+            if (lugar.style.display == 'none') {
+                lugar.style.display = 'block'
+                menu.style.display = 'block'
+            } else {
+                lugar.style.display = 'none'
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
